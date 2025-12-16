@@ -12,7 +12,7 @@ spec:
      paths:
      - backend:
          service:
-           name:  todoui-api
+           name:  todo-ui-api
            port: 
             number:  80
        path: /
