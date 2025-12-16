@@ -15,5 +15,5 @@ spec:
            name: todoui-api
            port: 
             number:  80
-       path: /
+       path: "/"
        pathType:  Prefix
