@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-ui
+  name: todoui-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: todo-ui
+      app: todoui-api
   template:
     metadata:
       labels:
-        app: todo-ui
+        app: todoui-api
     spec:
       containers:
-      - name: todo-ui
+      - name: todoui-api
         image: acrdevtodoproject010.azurecr.io/micro-todo-ui-api:v1
         ports:
         - containerPort: 80
