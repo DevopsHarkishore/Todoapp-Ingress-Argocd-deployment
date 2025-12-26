@@ -6,9 +6,9 @@ import { Box } from '@mui/material';
 import config from './config'; // Import the config file with environment variable support
 
 // Use the config to define API URLs
-const GET_TASKS_API_BASE_URL = "http://gettask.techno028.shop";
-const DELETE_TASK_API_BASE_URL = "http://deletetask.techno028.shop";
-const CREATE_TASK_API_BASE_URL = "http://addtask.techno028.shop";
+const GET_TASKS_API_BASE_URL = "http://todogettask.techno028.shop";
+const DELETE_TASK_API_BASE_URL = "http://tododeletetask.techno028.shop";
+const CREATE_TASK_API_BASE_URL = "http://todoaddtask.techno028.shop";
 
 //Update Task Functionality is Work In Progress
 // const UPDATE_TASK_API_BASE_URL = '';
@@ -21,7 +21,7 @@ function TodoApp() {
 
     const fetchTasks = async () => {
         try {
-            const response = await axios.get(${GET_TASKS_API_BASE_URL}/tasks);
+            const response = await axios.get(`${GET_TASKS_API_BASE_URL}/tasks`);
             setTasks(response.data);
         } catch (error) {
             console.error('Error fetching tasks', error);

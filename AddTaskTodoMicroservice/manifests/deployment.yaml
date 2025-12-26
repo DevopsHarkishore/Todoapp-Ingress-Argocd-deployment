@@ -9,6 +9,7 @@ spec:
       app: todo-add-tasks-api
   template:
     metadata:
+      name: todo-add-tasks
       labels:
         app: todo-add-tasks-api
     spec:
